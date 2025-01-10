@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+/* Navbar for Shopify */
+/* Navbar for Shopify *//* First Navbar for Shopify */
+.navbars {
+
+ padding: 10px 0;
+ /* Fix the first navbar at the top */
+  margin-top: 0px; /* Position it at the top of the viewport */
+  width: 100%; /* Make it full width */
+  z-index: 1; /* Ensure it's displayed above other content */
+  display: flex; /* Use flexbox to align elements in a row */
+  justify-content: space-between; /* Space elements evenly within the container */
+  align-items: center; /* Center items vertically */
+  height: 80px;
+}
+
+/* Style for MULTI */
+.multi {
+
+  font-weight: 700;
+  color: #FFD333; /* Text color for MULTI */
+  background-color: #6C757D; /* Background color for MULTI */
+  padding: 8px 15px; /* Increase the padding to create a larger block-like appearance */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: xx-large; /* Increase the font size for MULTI */
+  margin-left: 56px;
+}
+
+/* Style for SHOP */
+.shop {
+  font-weight: 700;
+  color: #6C757D; /* Text color for SHOP */
+  background-color: #FFD333; /* Background color for SHOP */
+  padding: 8px 15px; /* Increase the padding to create a larger block-like appearance */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: xx-large; /* Increase the font size for SHOP */
+}
+
+/* Container for "Help" and "FAQ" */
+.nav-texts {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; /* Adjust the margin to separate from the right */
+}
+
+/* Style for "Help" and "FAQ" */
+.help {
+  margin-top: -70px;
+  text-decoration: none;
+  color: #000000;
+  font-size: larger;
+  font-weight: 700;
+  margin-left: 1300px; /* Adjust the margin between "Help" and "FAQ" */
+}
+
+.faq {
+  margin-top: -70px;
+  text-decoration: none;
+  color: #000000;
+  font-size: larger;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+
+
+
+
+/* Second Navbar */
+/* Second Navbar */
+.navbar {
+  background-color: #6C757D;
+  padding: 10px 0;
+  margin-top: 0;
+  height: 70px;
+}
+
+.search-form {
+  border: #000000;
+  border-radius: 2px solid black;
+  margin-left: -950px;
+  margin-top: -2px;
+  width: 500px;
+
+}
+.search-form input {
+
+  border-radius: 2px;
+  
+}
+.search-form button {
+  background-color: #000000;
+  border-radius: 0;
+  color: white;
+}
+
+/* Style the "Categories" text differently */
+.navbar a.nav-link.categories {
+  background-color: #6C757D; /* Set the background color to match the second navbar */
+  height: 70px; /* Set the height to match the second navbar */
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #FFD333; /* Set the text color to #FFD333 */
+  font-weight: 500;
+}
+
+
+
+/* Style for the links in the second navbar */
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-start;
+; /* Align items to the left */
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+ }
+
+
+
+.navbar .nav-item {
+  list-style: none;
+  right: 870px;
+  margin-right: 30px; /* Adjust the spacing between items as needed */
+  font-size: larger;
+  
+ /* Set the font size for the links */
+
+}
+
+.navbar .nav-item:nth-child(1) {
+  margin-right: 600px;
+ 
+ /* Remove the right margin for the first link (Home) */
+}
+
+/* Set background color for "Categories" */
+.navbar .nav-item:nth-child(2) .nav-link {
+  background-color: #FFD333; /* Set the background color for "Categories" */
+  padding: 8px 16px; /* Set padding for the link */
+  border-radius: 5px; /* Add rounded corners */
+  color: black; /* Set text color */
+  font-weight: 1000; /* Set font weight */
+}
+
+
+
+.dropdown-menu {
+  background-color: #FFD333 ; /* Set your desired background color */
+  /* Other styles for the open dropdown menu */
+}
+
+.navbar .nav-link {
+  color: white; /* Set the text color to your preference */
+  font-weight: 500; /* Set the font weight to your preference */
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Style for the hover effect on the links */
+.navbar .nav-link:hover {
+  color: #FFD333 ; /* Change the hover color to your preference */
+  border-bottom: 2px solid #FFD333 ; /* Add a bottom border on hover */
+}
+
+
+/* Style the Register and Login links differently */
+.navbar-full .nav-link.register,
+.navbar-full .nav-link.login {
+  background-color: #333; /* Change the background color for Register and Login */
+  padding: 8px 16px; /* Set padding for these links */
+  border-radius: 5px; /* Add rounded corners */
+  color: #fff; /* Set text color */
+  font-weight: 500; /* Set font weight */
+}
+
+.navbar-full .nav-link.register:hover,
+.navbar-full .nav-link.login:hover {
+  background-color: #555; /* Change the background color on hover */
+  color: #fff; /* Set text color on hover */
+}
+
+/* Style the Cart link with the badge */
+.navbar-full .nav-link.cart {
+  position: relative; /* Position relative for badge positioning */
+}
+
+.navbar-full .nav-link.cart .ant-badge-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff5722; /* Badge background color */
+  color: #fff; /* Badge text color */
+  border-radius: 50%; /* Make the badge a circle */
+  padding: 4px 8px; /* Badge padding */
+  font-size: 12px; /* Badge font size */
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push the user's name to the right */
+  margin-right: 20px; /* Add some right margin for separation */
+}
+
+/* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button (user's name) */
+.dropdown .dropdown-toggle {
+  background: transparent;
+  color: #000000;
+  font-size: larger;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown menu */
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Position the menu to the right */
+  background-color: #FFFFFF; /* Background color of the dropdown menu */
+  border: 1px solid #6C757D; /* Border of the dropdown menu */
+  border-radius: 5px;
+  padding: 8px 0;
+  z-index: 1; /* Ensure it appears above other content */
+  min-width: 150px; /* Set a minimum width for the menu */
+}
+
+/* Style for dropdown menu items */
+.dropdown .dropdown-item {
+  color: #000000;
+  font-size: larger;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+/* Style for dropdown menu items on hover */
+.dropdown .dropdown-item:hover {
+  background-color: #6C757D;
+  color: #FFD333;
+}
+
+
+/* =============================
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 25px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.cat-btn:hover {
+  background-color: #434343;
+  color: white;
+}
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+  margin-top: 100px !important;
+}
+
+.dashboard-menu h4 {
+  background-color: #434343 !important;
+  color: white;
+  padding: 20px 0px;
+}
+
+
+.col-lg-8{
+  width : 60%;
+    height : 400px;
+    margin-top: 90px;
+    
+}
+
+.img-fluid{
+ 
+margin-top: 90px;
+max-width: 100%;
+height: 190px;
+ 
+}
+
+.img-fluids{
+ 
+  margin-top: 20px;
+  max-width: 100%;
+  height: 190px;
+   
+  }
+
+
+
+
